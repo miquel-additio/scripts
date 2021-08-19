@@ -40,12 +40,12 @@ wait $BUNDLE_PID
 
 # Copy bundle to app
 [ ! -d $APP"/"$BOWER"/bundles/additio" ] && mkdir -p $APP"/"$BOWER"/bundles/additio"
-echo "Copying bundles & images to app... 🚚"
-cp -r $CORE"/bundles" $APP"/"$BOWER
-cp -r $CORE"/bundles/additio/img/" $APP"/img/"
+echo "\nCopying bundles & images to app... 🚚"
+cp -r $CORE"/bundles" $APP"/"$BOWER && echo "- Bundles copied ✅"
+cp -r $CORE"/bundles/additio/img/project-planner" $APP"/img" && echo "- Images copied ✅"
 
 [ ! -d $CENTERS"/"$BOWER"/bundles/additio" ] && mkdir -p $CENTERS"/"$BOWER"/bundles/additio"
-echo "Copying bundles & images to centers... 🚚"
-cp -r $CORE"/bundles" $CENTERS"/"$BOWER
-cp -r $CORE"/bundles/additio/img/" $CENTERS"/img/"
+echo "\nCopying bundles & images to centers... 🚚"
+cp -r $CORE"/bundles" $CENTERS"/"$BOWER && echo "- Bundles copied ✅"
+cp -r $CORE"/bundles/additio/img/project-planner" $CENTERS"/img/" && echo "- Images copied ✅"
 
