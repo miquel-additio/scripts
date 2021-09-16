@@ -18,6 +18,13 @@ $HOME
 Bundles all packages from `additio-core` and copies them to the `additio/app` and `additio/centers`
 folders. 
 
+## `mv_bundle.sh`
+
+Once there's a bundle done in `additio-core`, moves the necessary files to `additio/app` and
+`additio/centers`.  
+It can be used either after running `bundle.sh` or if the current branch is `master`, as it has the
+bundled code.
+
 ## `upd-core.sh`
 
 Updates to the given version the (if higher than the actual) `additio-core` package (or repository,
