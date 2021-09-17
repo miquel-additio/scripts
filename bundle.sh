@@ -11,23 +11,23 @@ echo "Bundling additio-core to app & centers... 🚀"
 BUNDLE_PID=$!
 
 # Remove the existing bundle in app
-if [ -d $APP"/"$BOWER"/bundles/additio" ]; then
+if [ -d $APP_SRC"/"$BOWER"/bundles/additio" ]; then
   echo "Removing additio bundle... 🧹"
-  rm -rf $APP"/"$BOWER"/bundles/additio"
+  rm -rf $APP_SRC"/"$BOWER"/bundles/additio"
 fi
-if [ -d $APP"/img/project-planner" ]; then
+if [ -d $APP_SRC"/img/project-planner" ]; then
   echo "Removing additio images... 🧹"
   rm -rf APP"/"$BOWER"/bundles/additio/img/project-planner" 
 fi
 
 # Remove the existing bundle in centers
-if [ -d $CENTERS"/"$BOWER"/bundles/additio" ]; then
+if [ -d $CENTERS_SRC"/"$BOWER"/bundles/additio" ]; then
   echo "Removing centers bundle... 🧹"
-  rm -rf $CENTERS"/"$BOWER"/bundles/additio"
+  rm -rf $CENTERS_SRC"/"$BOWER"/bundles/additio"
 fi
-if [ -d $CENTERS"/img/project-planner" ]; then
+if [ -d $CENTERS_SRC"/img/project-planner" ]; then
   echo "Removing centers images... 🧹"
-  rm -rf $CENTERS"/img/project-planner" 
+  rm -rf $CENTERS_SRC"/img/project-planner" 
 fi
 
 # Wait for bundle to finish
