@@ -4,14 +4,14 @@
 source variables.sh
 
 # Copy additio-core bundle to Additio
-[ ! -d $APP"/"$BOWER"/bundles/additio" ] && mkdir -p $APP"/"$BOWER"/bundles/additio"
+[ ! -d $APP_SRC"/"$BOWER"/bundles/additio" ] && mkdir -p $APP_SRC"/"$BOWER"/bundles/additio"
 echo "\nCopying bundles & images to app... 🚚"
-cp -r $CORE"/bundles" $APP"/"$BOWER && echo "- Bundles copied ✅"
-cp -r $CORE"/bundles/additio/img/project-planner" $APP"/img" && echo "- Images copied ✅"
+cp -r $CORE"/bundles" $APP_SRC"/"$BOWER && echo "- Bundles copied ✅"
+cp -r $CORE"/bundles/additio/img/project-planner" $APP_SRC"/img" && echo "- Images copied ✅"
   
 # Copy additio-core bundle to Centers
-[ ! -d $CENTERS"/"$BOWER"/bundles/additio" ] && mkdir -p $CENTERS"/"$BOWER"/bundles/additio"
+[ ! -d $CENTERS_SRC"/"$BOWER"/bundles/additio" ] && mkdir -p $CENTERS_SRC"/"$BOWER"/bundles/additio"
 echo "\nCopying bundles & images to centers... 🚚"
-cp -r $CORE"/bundles" $CENTERS"/"$BOWER && echo "- Bundles copied ✅"
-cp -r $CORE"/bundles/additio/img/project-planner" $CENTERS"/img/" && echo "- Images copied ✅"
+cp -r $CORE"/bundles" $CENTERS_SRC"/"$BOWER && echo "- Bundles copied ✅"
+cp -r $CORE"/bundles/additio/img/project-planner" $CENTERS_SRC"/img/" && echo "- Images copied ✅"
 
