@@ -1,0 +1,7 @@
+{
+    "extends": ["standard", "prettier"],
+    "rules": {
+        "prefer-regex-literals": "off"
+    },
+    "ignorePatterns": ["**/out.js", "out.js"]
+}

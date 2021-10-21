@@ -1,0 +1,10 @@
+{
+    "name": "js-scripts",
+    "author": "Miquel de Domingo i Giralt",
+    "description": "NodeJS scripts to handle complex daily tasks",
+    "type": "module",
+    "license": "ISC",
+    "workspaces": [
+        "ModelGenerator"
+    ]
+}

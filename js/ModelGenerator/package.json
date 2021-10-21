@@ -1,0 +1,30 @@
+{
+    "name": "model-generator",
+    "version": "0.0.1",
+    "description": "Model generator to simplify the creation of models following the additio-core scheme",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "prestart": "eslint .",
+        "start": "node ModelGenerator.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/miquel-additio/scripts.git"
+    },
+    "author": "Miquel de Domingo i Giralt",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/miquel-additio/scripts/issues"
+    },
+    "homepage": "https://github.com/miquel-additio/scripts#readme",
+    "dependencies": {
+        "js-convert-case": "^4.1.2",
+        "@js-scripts/Common": "1.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.3"
+    }
+}
