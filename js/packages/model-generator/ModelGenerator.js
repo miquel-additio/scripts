@@ -2,7 +2,7 @@
 
 import { readFile, writeFileSync } from 'fs';
 
-import { colours } from '../Common/utils.js';
+import { colours } from '@js-scripts/common';
 import {
     cleanLines,
     cloneThisProp,

@@ -1,0 +1,17 @@
+{
+    "name": "@js-scripts/common",
+    "version": "0.0.1",
+    "description": "Common utilities for the js scripts",
+    "main": "index.js",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/miquel-additio/scripts.git"
+    },
+    "author": "Miquel de Domingo i Giralt",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/miquel-additio/scripts/issues"
+    },
+    "homepage": "https://github.com/miquel-additio/scripts#readme"
+}
